@@ -1,0 +1,1 @@
+ALTER TABLE public.cidades ADD COLUMN IF NOT EXISTS evento_id UUID REFERENCES public.eventos(id) ON DELETE CASCADE;
